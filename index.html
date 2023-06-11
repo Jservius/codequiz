@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>JavaScript Timed Quiz</h1>
+    </header>
+    <nav id="navbar">
+        <article class="links">
+            <a href = "#" id ="view-scores-link">View High Scores</a>
+            <a href = "#" id ="main-screen">Main Screen</a>
+        </article>
+        <div id="timer-div">
+            <h2 id="timer"></h2>
+        </div>
+    </nav>
+
+    <div id="view-scores">
+        <article id="high-scores">
+            <h1>Winner Scores</h1>
+            <span id= "display-initials"></span>
+            <span id ="display-score"></span>
+        </article>
+    </div>
+
+    <article id="start">
+        <button id ="start-btn" class="btn">Start</button>
+    </article>
+    <article id="question-div">
+        <p id="question"></p>
+        <ol id="answer">
+
+        </ol>
+    </article>
+    <article id="game-over">
+        <h1 class="text-style">All Done!</h1>
+        <h3 id="final-score"></h3>
+        <article class="submit-container">
+        <label for="initials">Enter Initials: <input type="text" name= "initials" id="initials"></label>
+        <button id ="submit-score-btn" class="btn">Submit Score</button>
+        </article>
+        <article class = "score-btn-container">
+        <button id ="view-scores-btn" class="btn">View High Scores</button>
+        <button id ="clear-scores-btn" class="btn">Clear High Scores</button>
+        </article>
+    </article>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

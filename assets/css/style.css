@@ -1,0 +1,154 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    font-size: 1.2rem;
+}
+
+:root {
+    --black: #000000;
+    --white: rgb(240, 240, 240);
+    --shadow: #191919;
+    --purple: #ff9fb7;
+    --light-purple: #ffb8b8;
+    --light-purple-background: #efdfff;
+    --dark-purple: #ff7b00;
+    --gold: #e9971c;
+    --yellow: #feff9e;
+}
+
+header{
+    border: 1px solid;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    background: var(--dark-purple);
+    text-shadow: 1px 1px 2px var(--shadow);
+    color: var(--white);
+}
+
+
+.btn, .answer-btn {
+    background-color: var(--dark-purple);
+    border: solid;
+    border-color: transparent;
+    border-radius: 3px;
+    padding: 10px;
+    text-shadow: 2px 2px 3px var(--shadow);
+    color: var(--white);
+}
+.answer-btn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.btn:hover, .answer-btn:hover {
+    border: 1px solid;
+    border-color: var(--orange);
+    box-shadow: var(--shadow);
+    background-color: var(--orange);
+    outline-offset: 1px;
+}
+
+.text-style {
+    color: var(--darker-blue);
+}
+
+#view-scores-link:hover , #main-screen:hover {
+    outline-color: var(--dark-purple);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px var(--black);
+    color: var(--gold);
+    text-decoration: underline;
+}
+
+#view-scores-link , #main-screen {
+   text-decoration: none;
+   padding-right: 30px;
+}
+
+.links {
+    text-align: center;
+    margin: 2% 0 2% 0;
+}
+#nav-bar{ 
+    text-align: center;
+    padding: 10px 25px;
+}
+
+
+#view-scores, #game-over{
+    background: var(--light-purple-background);
+    width: 80%;
+    border: 1px solid var(--light-purple);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#view-scores {
+    height: auto;
+    margin-bottom: 2%;
+}
+
+#game-over {
+    height: 40vh;
+}
+
+#start {
+    text-align: center;
+  
+    margin: 30px 10px 30px 10px;
+}
+
+#question-div {
+    background: var(--light-purple-background);
+    border: 1px solid var(--light-purple);
+    border-radius: 5px;
+    overflow: hidden;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 80%;
+    height: 50vh;
+    text-align: center;
+    color: #fff;
+}
+.score-btn-container, .submit-container {
+    margin: auto;
+    padding: 10px;
+}
+
+.text-style {
+    text-align: center;
+}
+
+.submit-container, .score-btn-container {
+    background: var(--light-purple-background);
+    text-align: center;
+    margin: 3% 0 3% 0;
+}
+
+#timer {
+    text-align: right;
+}
+
+.button-aside {
+    flex: 40%;
+    text-align: center;
+}
+
+#text1, #text2, #text3, #text4, .text5 {
+    flex: 60%;
+}
+
+#question {
+    color: var(--black);
+}
+
+#final-score, #high-scores {
+    text-align: center;
+}
+
